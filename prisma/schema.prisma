@@ -65,14 +65,28 @@ model VerificationRequest {
   @@unique([identifier, token])
 }
 
+model Game {
+  id    String @id @default(cuid())
+  name  String
+  image String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  clips Clip[]
+}
+
 model Clip {
   id     String @id @default(cuid())
   userId String
-  url    String
-  rank   String
+  gameId String
+
+  url  String
+  rank String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   user User @relation(fields: [userId], references: [id])
+  Game Game @relation(fields: [gameId], references: [id])
 }
