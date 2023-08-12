@@ -1,17 +1,11 @@
-import { Youtube } from "@/components/youtube";
+"use client";
 
-interface GameProps {
-  params: {
-    gameName: string;
-  };
-}
+import type { ComponentProps } from "react";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
-export default async function Game({ params: { gameName } }: GameProps) {
-  return (
-    <div className="h-full w-full flex items-center">
-      <div className="w-[65%]">
-        <Youtube iframeClass="h-full" id="dQw4w9WgXcQ" title="lmao" />
-      </div>
-    </div>
-  );
+type YoutubeProps = ComponentProps<typeof LiteYouTubeEmbed>;
+
+export function Youtube(props: YoutubeProps) {
+  return <LiteYouTubeEmbed {...props} />;
 }
