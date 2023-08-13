@@ -7,5 +7,13 @@ interface GameProps {
 }
 
 export default function Game(props: GameProps) {
-  return <Youtube id="dQw4w9WgXcQ" title="Title" />;
+  return (
+    <div className="embed-style">
+
+      <Youtube id="dQw4w9WgXcQ" title="Title" />
+
+    </div>
+
+
+  )
 }

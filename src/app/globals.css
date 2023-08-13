@@ -173,3 +173,12 @@ body {
 .sidebar_name {
   margin-left: 0.5rem;
 }
+
+.embed-style {
+  width: 40%;
+  height: 40%;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 20vh;
+  margin-left: 30%;
+}
