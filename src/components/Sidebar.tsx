@@ -25,5 +25,17 @@ const sidebarItems = [
     },];
 export default function Sidebar() {
     return <div>
-    </div>
+
+        <aside className='sidebar'>
+            <div className='sidebar_top'>
+                <Image
+                    src="/game.jpg"
+                    alt="logo"
+                    width={200}
+                    height={200}
+                    className="sidebar_logo"
+                />
+            </div>
+        </aside>
+    </div>;
 }
