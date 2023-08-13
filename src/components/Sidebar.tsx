@@ -35,7 +35,21 @@ export default function Sidebar() {
                     height={200}
                     className="sidebar_logo"
                 />
+
             </div>
+            <ul className="sidebar_list">
+                {sidebarItems.map(({ name, href, img: Image }) => (
+                    <li className="sidebar_item" key={name}>
+
+                        <Link href="/" className="sidebar_link">
+                            <span className="sidebar_icon">
+                            </span>
+
+                            <span className='sidebar_name'>{name}</span>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
         </aside>
     </div>;
 }
