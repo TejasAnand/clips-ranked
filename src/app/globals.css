@@ -84,3 +84,18 @@
   margin-top: 20vh;
   margin-left: 30%;
 }
+
+.ranks-wrapper {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+
+}
+
+.rank {
+  display: inline-block;
+  padding: 0.5%;
+}
