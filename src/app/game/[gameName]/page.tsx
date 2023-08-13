@@ -1,12 +1,11 @@
-"use client";
+import { Youtube } from "@/components/youtube";
 
-import type { ComponentProps } from "react";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
-
-type YoutubeProps = ComponentProps<typeof LiteYouTubeEmbed>;
-
-export function Youtube(props: YoutubeProps) {
-  return <LiteYouTubeEmbed {...props} />;
+interface GameProps {
+  params: {
+    gameName: string;
+  };
 }
 
+export default function Game(props: GameProps) {
+  return <Youtube id="dQw4w9WgXcQ" title="Title" />;
+}
