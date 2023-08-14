@@ -98,6 +98,13 @@
 .rank {
   display: inline-block;
   padding: 0.5%;
+
+}
+
+.rank:hover {
+  background-color: #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .submit-button {
