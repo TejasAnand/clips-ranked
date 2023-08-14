@@ -114,5 +114,10 @@
   margin-top: 2%;
   margin-left: 46%;
   /* align this button in the center instead of using left margin */
+}
 
+.submit-button:hover {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #64cffd;
 }
