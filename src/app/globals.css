@@ -99,3 +99,13 @@
   display: inline-block;
   padding: 0.5%;
 }
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 2%;
+  margin-left: 46%;
+  /* align this button in the center instead of using left margin */
+
+}

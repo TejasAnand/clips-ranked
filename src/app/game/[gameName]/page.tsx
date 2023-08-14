@@ -1,5 +1,9 @@
+'use client';
 import { Youtube } from "@/components/youtube";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
+
 
 interface GameProps {
   params: {
@@ -89,6 +93,13 @@ export default function Game(props: GameProps) {
           />
         </li>
       </ul>
+      <Button
+        /* align this button in the center instead of using left margin */
+        color="white"
+        onClick={() => console.log("Store and check if correct")}
+        children="Submit Rank"
+        className="submit-button"
+      />
     </div>
   )
 }
